@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <title>I miei utenti</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
-  <title>I miei utenti</title>
-</head>
+  <body>
+    <div data-router-cotainer="" class="container">
+      <ul id="post"></ul>
+      <ul id="users"></ul>
+    </div>
 
-<body>
-  <div class="container">
-    <ul id="post"></ul>
-    <ul id="users"></ul>
-  </div>
-
-  <script src="./src/app.js" type="module"></script>
-</body>
-
+    <script src="./dist/app.js" type="module"></script>
+  </body>
 </html>

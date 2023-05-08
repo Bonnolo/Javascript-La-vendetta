@@ -1,0 +1,18 @@
+{
+  "name": "javascript-la-vendetta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "rebuild": "shx rm -rf dist",
+    "build": "shx cp -r src dist"
+  },
+  "keywords": [],
+  "author": "Bonny",
+  "license": "ISC",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.2.3",
+    "shx": "^0.3.4"
+  }
+}
