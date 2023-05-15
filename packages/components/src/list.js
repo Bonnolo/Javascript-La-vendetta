@@ -1,4 +1,4 @@
-import { renderElement, toJson } from "../utils/index.js";
+import { renderElement, toJson } from "@mohole-js-02/utils";
 
 class ListComponent {
   constructor(selector, url) {
