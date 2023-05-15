@@ -6,4 +6,5 @@ class PostListComponent extends ListComponent {
     return new PostComponent(item);
   }
 }
+
 export default PostListComponent;

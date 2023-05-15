@@ -6,4 +6,5 @@ class UsersListComponent extends ListComponent {
     return new UserComponent(item);
   }
 }
+
 export default UsersListComponent;

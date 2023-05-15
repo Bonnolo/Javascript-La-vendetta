@@ -6,5 +6,4 @@ class UserComponent {
     this.element.innerHTML = this.template;
   }
 }
-
 export default UserComponent;
