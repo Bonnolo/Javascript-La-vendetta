@@ -1,4 +1,11 @@
+comandi da eseguire
+
 npm i
 npm run build
+
+cd src/server
+
+npm i
 npm run start
-done
+
+ad ogni modifica del codice rifare il giro (senza npm i)
