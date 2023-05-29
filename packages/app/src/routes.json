@@ -1,17 +1,20 @@
 [
     {
       "path": "/",
-      "template": "<div class=\"container\"><span>Route /</span><ul id=\"users\"></ul></div>",
+      "label":"Home",
+      "template": "<div class=\"container\"><span>Route /</span><ul id=\"users\" class=\"list-group\"></ul></div>",
       "view": "users"
     },
     {
       "path": "/users",
-      "template": "<div class=\"container\"><span>Route /users</span><ul id=\"users\"></ul></div>",
+      "label":"Users",
+      "template": "<div class=\"container\"><span>Route /users</span><ul id=\"users\" class=\"list-group\"></ul></div>",
       "view": "users"
     },
     {
       "path": "/posts",
-      "template": "<div class=\"container\"><span>Route /posts</span><ul id=\"posts\"></ul></div>",
+      "label":"Posts",
+      "template": "<div class=\"container\"><span>Route /posts</span><ul id=\"posts\" class=\"list-group\"></ul></div>",
       "view": "posts"
     }
 ]

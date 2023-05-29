@@ -1,14 +1,19 @@
 const path = require("path");
 const zlib = require("zlib");
 const CompressionPlugin = require("compression-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/app.js",
+  entry: "./src/index.js",
   output: {
     path: `${__dirname}/dist`,
     publicPath: "dist/",
-    filename: "[name].[contenthash].js",
+    filename: "index.js",
+    library: {
+      type: "module",
+    },
+  },
+  experiments: {
+    outputModule: true,
   },
   resolve: {
     extensions: [".js", ".json"],
@@ -33,11 +38,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "index.html"),
-      filename: "index.html",
-      showErrors: true,
-    }),
     new CompressionPlugin({
       filename: "[path][base].br",
       algorithm: "brotliCompress",

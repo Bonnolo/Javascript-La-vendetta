@@ -7,7 +7,7 @@
         "clean": "lerna clean -y",
         "postclean": "npm run bootstrap",
         "bootstrap": "lerna bootstrap --hoist",
-        "prebuild": "npm run clean",
+        "prebuild": "npm run clean && npm run bootstrap",
         "build": "lerna run build",
         "start": "lerna run start --scope '@mohole-js-02/server'",
         "test": "echo \"Error: no test specified\" && exit 1"
